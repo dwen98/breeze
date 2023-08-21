@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema;  // added by dwen
+use Illuminate\Support\Facades\Schema;  // added by dwen to fix DB migration error
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,6 +20,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Schema::defaultStringLength(191); //added by dwen
+        Schema::defaultStringLength(191); //added by dwen to fix DB migration error
     }
 }
